@@ -20,7 +20,7 @@ function gotData(data){
   var write = data.val();
   var keys = Object.keys(write)
   for (var i = 0;i < 3; i++){
-    var k = keys[i];
+    var k = keys[Math.Random()*Object.keys(write).length];
     console.log(write[k].Yazı)
     var context_to = ".context"+i
     var text_to = ".content"+i
